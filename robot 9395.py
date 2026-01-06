@@ -1,13 +1,13 @@
 print("Hello welcome to priyanshu coffee shop ")
 name = input("what is your name?\n" ).title()
-if name == "Arnav":
-    evil_status = input("are you evil?\n")
+if name == "Bob":
+    evil_status = input("Are you evil?\n").lower
     good_deeds = int(input("How many good deeds have you done today?\n"))
     if evil_status == "yes" and good_deeds <4 :
-        print("you are not welcome here, get out from here")
+        print("You are not welcome here, get out from here")
         exit()
-    if evil_status == "no" or "No" :
-     print("Oh! so you are one of those good Arnavs. You are welcome here")
+    if evil_status == "no":
+     print("Oh! so you are one of those good Bobs. You are welcome here")
 else : print("Hello " + name + " thank you so much for coming in today!!")
 menu = "Black Coffee :- $3,\n Espresso :- 4$,\n Latte :- $6,\n Cappucino :- $6.5,\n Frappuchino :- $7.5,\n Classical Coffee :- $2"
 
@@ -40,3 +40,4 @@ quantity = input("How many " + order.title() + " would you like?\n")
 total = price * int(quantity)
 print ("Your total is: $" + str(total))
 print("Sounds good, we will have your " + quantity +" "+ order + " ready in a moment") 
+
